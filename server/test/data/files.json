@@ -1,0 +1,12 @@
+{
+  "files": [
+    "test1.csv",
+    "test2.csv",
+    "test3.csv",
+    "test4.csv",
+    "test5.csv",
+    "test6.csv",
+    "test9.csv"
+  ],
+  "test2.csv": "file,text,number,hex\ntest2.csv,q,327\ntest2.csv,rRESHmYaGZfsBaQJph,2521,f8312ed54fdabda3eebdbb3d90091e40"
+}
