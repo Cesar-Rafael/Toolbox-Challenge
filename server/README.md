@@ -8,3 +8,10 @@ Instala y corre el programa con los siguientes comandos
 npm install
 npm start
 ```
+
+## Para realizar test
+Corre el siguiente comando
+
+```sh
+npm test
+```
