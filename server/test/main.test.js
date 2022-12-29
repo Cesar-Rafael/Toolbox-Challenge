@@ -1,6 +1,6 @@
 const { assert, expect } = require("chai");
 const filesData = require("./data/files.json");
-const { listFiles, downloadFile } = require("../utils/apiExtern");
+const { listFiles, downloadFile } = require("../src/utils/apiExtern");
 
 describe("API Testing", () => {
   describe("Listing files", () => {
@@ -11,7 +11,7 @@ describe("API Testing", () => {
 
     it("Validate format CSV", async () => {
       const files = await listFiles();
-      files.forEach((file) => { 
+      files.forEach((file) => {
         const fileFormat = file.split(".")[1];
         assert.equal(fileFormat, "csv");
       });
@@ -19,9 +19,13 @@ describe("API Testing", () => {
   });
 
   describe("Download a file", () => {
-    it("Validating test2.csv content", async () => {
+    it("Validating test2.csv content type", async () => {
       const file = await downloadFile("test2.csv");
-      assert.equal(filesData["test2.csv"], file.data);
+      assert.typeOf(
+        file.data,
+        "string",
+        "El contenido del archivo debe ser un string"
+      );
     });
   });
 });
