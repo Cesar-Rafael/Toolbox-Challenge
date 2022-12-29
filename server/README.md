@@ -1,4 +1,4 @@
-# Ficohsa Challenge - Server
+# Toolbox Challenge - Server
 
 ## ¿Cómo utilizarlo?
 
